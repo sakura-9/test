@@ -1,13 +1,17 @@
 import React from "react";
+import ColofulMessage from "./components/ColorfulMessage.js";
 
 const App = () => {
-  const click = () => alert("button click");
   return (
     <>
       <h1> hallo world </h1>
-      <button onClick={click}>ボタン</button>
+      <ColofulMessage color="blue">components</ColofulMessage>
+      <button onClick={ClickButton}>ボタン</button>
     </>
   );
 };
 
+const ClickButton = () => {
+  return alert("xxxxx");
+};
 export default App;
